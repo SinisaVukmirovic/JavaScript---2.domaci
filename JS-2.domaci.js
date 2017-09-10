@@ -33,12 +33,11 @@ function howMuch() {
 
 //4.zadatak - suma celih brojeva u opsegu od N do K
 function sumFromNtoK() {
-	var N = prompt("Unesi pocetni broj:");
-	var K = prompt("Unesi krajnji broj:");
-	
-	for (i = N; i <= K - N; i++) {
-		var sum = i;
-	sum += i;
+	var N = parseInt(prompt("Unesi pocetni broj:"));
+	var K = parseInt(prompt("Unesi krajnji broj:"));
+	var sum = 0;
+	for (i = N; i <= K; i++) {
+		sum += i;
 	}
 	console.log(sum);
 	alert("Zbir celih brojeva u opsegu od " + N + " do " + K + " je:\n" + sum);
